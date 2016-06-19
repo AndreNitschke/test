@@ -3,13 +3,7 @@
 // Verbindung zur Datenbank aufbauen
 include "db.inc.php";
 
-// Daten aus der Eingabemaske holen
-$vorname = $_POST["vorname"];
-$nachname = $_POST["nachname"];
-$strasse = $_POST["strasse"];
-$ort = $_POST["ort"];
-$telefon = $_POST["telefon"];
-$email = $_POST["email"];
+
 
  $neuereintrag = new adresse($_POST["vorname"], $_POST["nachname"], $_POST["strasse"], $_POST["ort"], $_POST["telefon"], $_POST["email"]);
 
